@@ -79,7 +79,7 @@ public class FileComparator {
         {
             //Copy File.
             case 1:
-                copyFile("sample-copy.txt", content);
+                copyFile(filename[1], content);
                 break;
             //Compare File Contents.
             case 2:
@@ -102,7 +102,7 @@ public class FileComparator {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-    	fileOperation(1, "sample.txt");
+    	fileOperation(1, "sample.txt", "sample-copy.txt");
     	fileOperation(2, "sample.txt", "sample2.txt");
         fileOperation(3, "sample.txt");
     	fileOperation(4, "sample.txt");
